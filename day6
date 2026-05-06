@@ -29,3 +29,123 @@ int discountedamount(int a){
 int main(){
     cout<<discountedamount(1000);
 }
+//problem 3
+//smart ac remote 
+
+
+#include<iostream>
+using namespace std;
+
+void setTemprature(){
+    cout<<"Temprature set to 22°C" <<"\n";
+}
+void setTemprature(double temp){
+    cout <<"Temprature set to" <<temp <<"°C" <<"\n";
+}
+void setTemprature(string mode){
+    if(mode == "ECO"){
+        cout << "Temprature set to 24°C" <<"\n";
+    } else if (mode == "TURBO"){
+        cout <<" Temprature set to 18°C" <<"/n";
+    }
+}
+
+int main(){
+    setTemprature();
+    setTemprature(20.5);
+    setTemprature("ECO");
+}
+
+    
+
+
+//ptoblem no 4 
+//Pointers
+//Declaration , Initialization, Arithmetic opertaion through pointer 
+#include<iostream>
+using namespace std;
+
+int main(){
+    int a = 10;
+    int *ptr1 =&a;
+    
+    int b = 20;
+    int *ptr2 = &b;
+    
+    //int c = a + b;
+    int c = *ptr1 + *ptr2;
+    cout << c;
+
+
+//problem no 5
+//swapping of 2 variable's value using pointers and using functions
+#include<iostream>
+using namespace std;
+
+
+int main(){
+    int a = 5, b = 10;
+    
+    int *p = &a;
+    int *q = &b;
+    
+    int temp = *p;
+    *p = *q;
+    *q = temp;
+    
+    cout <<"After swapping :\n";
+    cout <<"a = " << a <<", b = "<< b;
+    
+    return 0 ;
+    
+}
+
+
+//classes/object
+#include<iostream>
+using namespace std;
+
+class Student{
+    
+public:
+     string name;
+     int age ;
+    
+void introduce(){
+    cout << " Hi there,this person name is " << name <<" and his age is " << age <<"\n" ;
+    }
+};
+
+int main(){
+   Student s1, s2;
+   s1.name = "Ram";
+   s1.age  = 24;
+   s2.name = "Rahul";
+   s2.age = 25;
+   s1.introduce();
+   s2.introduce();
+    
+}
+
+//problem no 7
+//access specifier
+//types -- 7.1--public
+//         7.2--private
+//        7.3--protected
+           
+// 7.1--- public
+#include<iostream>
+using namespace std;
+
+class publicPark{
+public:
+    void enter(){
+        cout << "anyone can enter in the park...";
+    }
+};
+int main (){
+    publicPark p;
+    p.enter();
+}    
+
+
