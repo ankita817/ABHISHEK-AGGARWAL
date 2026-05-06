@@ -11,3 +11,21 @@ int billing(int a){
 int main(){
     cout<<billing(50);
 }
+
+
+//problem 2
+//store discount application 
+
+#include <iostream>
+using namespace std;
+
+int discount(int a){
+    return a*0.10;
+}
+int discountedamount(int a){
+    return a -discount(a);
+}
+
+int main(){
+    cout<<discountedamount(1000);
+}
