@@ -1,0 +1,181 @@
+#include<iostream>
+using namespace std;
+
+//problem--1
+// types of inheritance
+//1.1--single inheritance
+
+class Vehicle {
+    public:
+    void start(){
+        cout<<"Vehicle starts"<<"\n";
+    }
+};
+class Car: public Vehicle{
+public:
+    void drive(){
+        cout<< "Car is running" <<"\n";
+    }
+};
+
+int main(){
+    Car obj1;
+    obj1.drive();
+    obj1.start();
+    
+}
+
+
+#include<iostream>
+using namespace std;
+
+//problem--1
+// types of inheritance
+//1.1--single inheritance
+
+class Vehicle {
+    public:
+    void start(){
+        cout<<"Vehicle starts"<<"\n";
+    }
+};
+class Car: public Vehicle{
+public:
+    void drive(){
+        cout<< "Car is running" <<"\n";
+    }
+};
+
+int main(){
+    Car obj1;
+    obj1.drive();
+    obj1.start();
+    
+}
+
+
+#include<iostream>
+using namespace std;
+
+//problem--1
+// types of inheritance
+//1.1--single inheritance
+
+class Vehicle {
+    public:
+    void start(){
+        cout<<"Vehicle starts"<<"\n";
+    }
+};
+class Car: public Vehicle{
+public:
+    void drive(){
+        cout<< "Car is running" <<"\n";
+    }
+};
+
+int main(){
+    Car obj1;
+    obj1.drive();
+    obj1.start();
+    
+}
+
+#include<iostream>
+using namespace std;
+
+//problem--1
+// types of inheritance
+//1.1--single inheritance
+
+class Vehicle {
+    public:
+    void start(){
+        cout<<"Vehicle starts"<<"\n";
+    }
+};
+class Car: public Vehicle{
+public:
+    void drive(){
+        cout<< "Car is running" <<"\n";
+    }
+};
+
+int main(){
+    Car obj1;
+    obj1.drive();
+    obj1.start();
+    
+}
+
+
+#include<iostream>
+using namespace std;
+
+//problem--1
+// types of inheritance
+//1.4--multiple inheritance
+
+class Parent1{
+public:
+  void paiseDoMummy(){
+      cout<<"Mummy paise de do goomne jana hai...";
+  }
+};
+
+class Parent2{
+public:
+   void paiseDoPapa(){
+       cout<<"Papa paise de do books laani hai...";
+   }
+};
+
+class child : public Parent1,public Parent2{
+    
+};
+int main(){
+    child c;
+    c.paiseDoMummy();
+    c.paiseDoPapa();
+}
+
+#include<iostream>
+using namespace std;
+
+//problem--1
+// types of inheritance
+//1.5--hybrid inheritance
+
+class A{
+public:
+     void print(){
+      cout<<"hi there...";
+  }
+};
+
+class B :virtual  public A {
+  //no logic
+};
+class C : virtual public A {
+       //no logic
+ };
+
+
+class D : public B,public C {
+    //NO LOGIC
+};
+int main(){
+    D obj1;
+    obj1.print();
+    
+}
+
+
+
+
+}
+
+
+
+
+
