@@ -1,0 +1,44 @@
+//problem--1
+//function overriding
+//same function name--same parameters--different classes;
+
+class Appliance {
+public:    
+    virtual void turnOn() {
+        cout <<"Appliance is getting turn on..."<<"\n";
+    }
+    void work()=0; // this is pure virtual function
+};
+
+class Fan : public Appliance {
+public :    
+    void turn0n() override {
+        cout <<"fan blades are moving slowly..."<<"\n";
+    }
+public :    
+    void work()  override {
+        cout << " once fan starts at full speed it gives cool air..."<<"\n";
+    }
+};
+
+class Toaster : public Appliance {
+public :    
+    void work()  override {
+        cout <<"Toaster is heating up the breads..."<<"\n"    
+    }  
+ };
+
+int main(){
+    Fan myfan;
+    Appliance* kitchenApp;
+    kitchenApp = &myfan;
+    kitchenApp ->turnOn();
+    kitchenApp ->work();
+    
+    Toaster myToast;
+    kitchenApp = &myToast;
+    kitchenApp->turnOn();
+    kitchenApp->work();
+    
+}
+    
